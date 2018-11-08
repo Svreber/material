@@ -14,6 +14,7 @@
     "components",
     "google"
   ],
+  "main": "./dist/angular-material.js",
   "homepage": "https://material.angularjs.org",
   "bugs": "https://github.com/angular/material/issues",
   "license": "MIT",

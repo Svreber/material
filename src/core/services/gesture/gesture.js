@@ -114,7 +114,7 @@ function MdGesture($$MdGestureHandler, $$rAF, $timeout) {
   var isIos = userAgent.match(/ipad|iphone|ipod/i);
   var isAndroid = userAgent.match(/android/i);
   var touchActionProperty = getTouchAction();
-  var hasJQuery =  (typeof window.jQuery !== 'undefined') && (angular.element === window.jQuery);
+  var hasJQuery = true || (typeof window.jQuery !== 'undefined') && (angular.element === window.jQuery);
 
   var self = {
     handler: addHandler,
@@ -393,7 +393,7 @@ function GestureHandler (name) {
 }
 
 function MdGestureHandler() {
-  var hasJQuery =  (typeof window.jQuery !== 'undefined') && (angular.element === window.jQuery);
+  var hasJQuery =  true || (typeof window.jQuery !== 'undefined') && (angular.element === window.jQuery);
 
   GestureHandler.prototype = {
     options: {},
